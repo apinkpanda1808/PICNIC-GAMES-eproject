@@ -26,7 +26,7 @@ eProject documentation at :https://github.com/apinkpanda1808/PICNIC-GAMES-eproje
 
 ============================
 
-eProject published at : http://127.0.0.1:5500/index.html
+eProject published at : https://apinkpanda1808.github.io/PICNIC-GAMES-eproject/.
 
 ============================
 
