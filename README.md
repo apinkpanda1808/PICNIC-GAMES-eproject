@@ -26,7 +26,7 @@ eProject documentation at
 
 ============================
 
-eProject published at 
+eProject published at : http://127.0.0.1:5500/index.html
 
 ============================
 
