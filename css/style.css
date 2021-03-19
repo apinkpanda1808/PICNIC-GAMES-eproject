@@ -1142,7 +1142,7 @@ map inframe{
 }
 
 .blog-content-2{
-    background: url(/images-and-videos/blog-image-2.jpg);
+    background: url(../images-and-videos/blog-image-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -1176,7 +1176,7 @@ map inframe{
     font-size: 18px;
 }
 .blog-content-3{
-    background: url(/images-and-videos/blog-image-3.jpg);
+    background: url(../images-and-videos/blog-image-3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -1212,7 +1212,7 @@ map inframe{
     font-size: 18px;
 }
 .blog-content-4{
-    background: url(/images-and-videos/blog-image-4.jpg);
+    background: url(../images-and-videos/blog-image-4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -1250,7 +1250,7 @@ map inframe{
 
 
 .blog-content-5{
-    background: url(/images-and-videos/blog-image-5.jpg);
+    background: url(../images-and-videos/blog-image-5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -1287,7 +1287,7 @@ map inframe{
     margin-left: 18px;
 }
 .blog-content-6{
-    background: url(/images-and-videos/blog-image-6.jpg);
+    background: url(../images-and-videos/blog-image-6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
