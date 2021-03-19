@@ -1107,7 +1107,7 @@ map inframe{
  
 }
 .blog-content-1{
-    background: url(/images-and-videos/blog-image-1.jpg);
+    background: url(../images-and-videos/blog-image-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
