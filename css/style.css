@@ -6,8 +6,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
+/* ------scroll-bar----- */
+::-webkit-scrollbar
+{
+    width: 14px;
+    background-color: #454644;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(to top, red ,orange, yellow, green, cyan, blue, violet);
+    border-radius: 6px;
+}
+
+
 /* ----scroll to top------ */
 .scrollTop {
     background: yellow url(../images-and-videos/up2.png);
@@ -194,9 +205,9 @@ header{
     width: 100px;
     margin-top: 10px;
     cursor: pointer; 
-    position: relative;    
-    top: 0;
-    left: 120px;
+    position: relative; 
+    padding-top: 50px;
+    left: 220px;
     border-radius: 30px;
     height: auto;
 }
@@ -232,6 +243,9 @@ header{
     border: 2px solid #fcfcfc;
     background-color: #5f1782;
     border-radius: 50%;
+    margin-bottom: 20px;
+    padding-bottom:10px ;
+
 
 }
     .title-intro{
@@ -243,13 +257,13 @@ header{
     }
     .title::before{
     content: '';
-    background: #7b1798;
+    background: #164bfc;
     height: 5px;
     width: 200px;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    transform: translateY(63px);
+    transform: translateY(80px);
 }
 /*----------under title-------  */
 
@@ -273,7 +287,7 @@ header{
 .body-game a{
     text-decoration: none;
     font-size: 35px;
-    color: rgb(0, 0, 2);
+    color: rgb(255, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,7 +298,7 @@ header{
 .body-game a:hover{
     text-decoration: none;
     font-size: 35px;
-    color: rgb(255, 0, 0);
+    color: rgb(28, 3, 184);
 }
 .body-game-type a{
     text-decoration: none;
@@ -301,7 +315,7 @@ header{
 .body-game-type a:hover{
     text-decoration: none;
     font-size: 35px;
-    color: rgb(255, 0, 0);
+    color: rgb(8, 255, 8);
 }
 .indoor-img{
     width: 300px;
@@ -534,11 +548,13 @@ header{
     transform: translateY(63px);
 }
 .in-out-door-game{
-    margin-top: 30px;
+    margin-top: 20px;
     background-image: linear-gradient(to right, #e8f231 15%, #09b37a 100%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
-    transform: scale(0.9);
-    border-radius: 100px 100px 100px 100px;
+    transform: scale(1);
+    border-radius: 50px 50px 50px 50px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    padding:10px;
+
 }
 .in-out-door-game h2{
     font-family: 'Akaya Kanadaka', cursive;
@@ -551,7 +567,7 @@ header{
 .in-out-door-game p{
     font-family: 'Akaya Kanadaka', cursive;
     color: rgb(136, 2, 65);
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
 }
 .in-out-door-intro-game img {
@@ -572,7 +588,7 @@ header{
 }
 .card-block img{
     width: 100%;
-    height: 200px;
+    height: 170px;
 }
 .card-text{
     background-color: white;
@@ -591,14 +607,16 @@ header{
     background-color: rgb(101, 5, 109);
 }
 .btn-play a{
-
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-size: 40px;
-
+}
+.btn-play a:hover{
+    background-color: black;
+    color: yellow;
 }
 
 /*-------row 2-------*/
@@ -610,7 +628,7 @@ header{
 }
 .card-block-1 img{
     width: 100%;
-    height: 200px;
+    height: 170px;
 }
 
 .card-text-1{
@@ -640,7 +658,10 @@ header{
     align-items: center;
     color: white;
     font-size: 40px;
-
+}
+.btn-play-1 a:hover{
+    background-color: black;
+    color: yellow;
 }
 /* -------row 3 ------*/
 .card-2{
@@ -651,7 +672,7 @@ header{
 }
 .card-block-2 img{
     width: 100%;
-    height: 200px;
+    height: 170px;
 }
 
 .card-text-2{
@@ -678,7 +699,10 @@ header{
     align-items: center;
     color: rgb(255, 243, 75);
     font-size: 40px;
-
+}
+.btn-play-2 a:hover{
+    background-color: black;
+    color: yellow;
 }
 /* row 4 */
 .card-3{
@@ -689,7 +713,7 @@ header{
 }
 .card-block-3 img{
     width: 100%;
-    height: 200px;
+    height: 170px;
 }
 
 .card-text-3{
@@ -718,6 +742,10 @@ header{
     align-items: center;
     color: rgb(235, 14, 14);
     font-size: 40px;
+}
+.btn-play-3 a:hover{
+    background-color: black;
+    color: yellow;
 }
 
 
@@ -988,7 +1016,8 @@ map inframe{
     padding: 80px;
 }
 .detai-game-icon img{
-    height: 80px;
+    height: 100%;
+    width: auto;
 }
 .detail-game-para {
     text-align: center;
@@ -1057,6 +1086,258 @@ map inframe{
     background-color: #44107A;
     color: white;
 }
+/* ----------BLOG----------- */
+.btn-read-more{
+    width: 150px;
+    background-color: #b620dc;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-left: 10px; 
+    margin-bottom: 10px;
+
+
+}
+.btn-read-more:hover{
+    text-decoration: none;
+    color: yellow;
+    background: #d60c0c;
+ 
+}
+.blog-content-1{
+    background: url(/images-and-videos/blog-image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+   height: 215px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   padding-bottom: 10px;
+}
+.blog-content-1::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: .5;
+    z-index: -1;
+}
+.blog-content-1 h3{
+    margin-left: 20px;
+    margin-right: 3x;
+    color: #ffffff;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 255, 0), 0 -10px 20px #ff8001, 0 -18px 40px rgb(191, 155, 155);
+}
+.blog-content-1 .fa {
+    margin-left: 18px;
+    color: rgb(255, 67, 67);
+    font-size: 18px;
+}
+
+.blog-content-2{
+    background: url(/images-and-videos/blog-image-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+}
+.blog-content-2::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: .5;
+    z-index: -1;
+}
+.blog-content-2 h3{
+    margin-left: 20px;
+    margin-right: 3x;
+    color: #ffffff;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 255, 0), 0 -10px 20px #ff8001, 0 -18px 40px rgb(191, 155, 155);
+}
+.blog-content-2 .fa {
+    margin-left: 18px;
+    color: rgb(255, 67, 67);
+    font-size: 18px;
+}
+.blog-content-3{
+    background: url(/images-and-videos/blog-image-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    height: 215px;
+
+
+}
+.blog-content-3::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: .5;
+    z-index: -1;
+}
+.blog-content-3 h3{
+    margin-left: 20px;
+    margin-right: 3x;
+    color: #ffffff;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 255, 0), 0 -10px 20px #ff8001, 0 -18px 40px rgb(191, 155, 155);
+}
+.blog-content-3 .fa {
+    margin-left: 18px;
+    color: rgb(255, 67, 67);
+    font-size: 18px;
+}
+.blog-content-4{
+    background: url(/images-and-videos/blog-image-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    height: 420px;
+     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    }
+.blog-content-4::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: .5;
+    z-index: -1;
+}
+.blog-content-4 h3{
+    margin-left: 20px;
+    color: #ffffff;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 255, 0), 0 -10px 20px #ff8001, 0 -18px 40px rgb(191, 155, 155);
+}
+.blog-content-4 p{
+    color: yellow;
+    font-size: 18px;
+    margin-left: 20px; 
+}
+.blog-content-4 .fa {
+    margin-left: 18px;
+    color: rgb(255, 67, 67);
+}
+
+
+.blog-content-5{
+    background: url(/images-and-videos/blog-image-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+.blog-content-5::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: .4;
+    z-index: -1;
+}
+
+.blog-content-5 h4{
+    font-size: 15px;
+    color: #ffffff;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 255, 0), 0 -10px 20px #ff8001, 0 -18px 40px rgb(191, 155, 155);
+    margin-left: 20px;
+}
+
+.blog-content-5 .fa {
+    color: rgb(255, 67, 67);
+    font-size: 18px;
+    margin-left: 18px;
+}
+.blog-content-6{
+    background: url(/images-and-videos/blog-image-6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+.blog-content-6::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: .5;
+    z-index: -1;
+}
+.blog-content-6 h4{
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 255, 0), 0 -10px 20px #ff8001, 0 -18px 40px rgb(191, 155, 155);
+    margin-left: 20px;
+}
+
+.blog-content-6 .fa {
+    color: rgb(255, 67, 67);
+    font-size: 18px;
+    margin-left: 18px;
+}
+.blog-section{
+    height: 50px;
+    padding: 5px;
+    margin-bottom: 60px;
+
+}
+.blog-section p{
+    border-radius: 50%;
+    text-transform: uppercase;
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    color: #202c2d;
+    background: #c4c4c4;
+    text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #bbbbbb, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+}
+
     
 
 
@@ -1119,7 +1400,7 @@ map inframe{
     border: none;
     border-radius: 0;
     margin-top: 25px;
-    max-width: 350px;
+    width: 100% ;
     background: #07294d;
     color: white;
 }
@@ -1187,15 +1468,193 @@ hr{
 /* ----------------end footer------------- */
 
 
-@media only screen and (max-width: 600px){
+/* ---------responsive---------- */
+@media only screen and (max-width: 768px){
+    .promo-title{
+        margin-left: 20px;
+    }
+    .welcome{
+        text-align: center;
+    }
+   .video-demo{
+       width: 95%;
+       height: 400px;
+   }
     .benefit-img{
-        width: 100px;
-        margin-top: 10px;
+        width: 45%;
         cursor: pointer; 
         position: relative;    
-        top: 0;
-        left: 20px;
-        border-radius: 30px;
+        left: 72px;
+        top: 10px;
+        border-radius: 50px;
+        padding-top: 0;
+}
+    .benefit-body p{
+        font-size: 12px;
+        color: #070a09;
+    }
+    .benefit-body h4{
+        font-size: 16px;
+        color: #1f06ff;
+        margin-top:20px ;
+    }
+    .slick-slider button{
+        display: none;
+        box-shadow: none;
+        background-color: none; 
+        position: relative;
+      
+    }
+    .slick-slider .slick-prev{
+        position: relative;
+        left: -50px;
+        top: 500px;
+    }
+   
+    .slick-slider .slick-next{
+        position: relative;
+        left: 52px;
+        top: 40px;
+    }
+   
+    .indoor-img{
+        width: 60%;
+    }
+    .outdoor-img{
+        width: 60%;
+    }
+    .body-game{
+        margin-bottom: 30px;
+    }
+    .body-game a{
+        font-size: 30px;
+    }
+    .body-game a:hover{
+        font-size: 30px;
+    }
+    .body-game-type a{
+        font-size: 30px;
+      
+    }
+    .body-game-type a:hover{
+        font-size: 30px;
+    }
+
+    .body-game-type-img{
+        width: 80%;
+        height: auto;
+    }
+    .footer-box img{
+        width: 100%;
+        margin-left: 20px;
+    }
+    .footer-box p{
+        font-size: 18px;
+        margin-left: 20px;
+        text-align: start;
+    }
+    .footer-box .btn-primary{
+        width: 20%;
+    }
+   
+    .note{
+        width: 100%;
+    }
+    .social-media{
+        border: none;
+    }
+    .detai-game-icon img{
+       max-width: 90px;
+       height: 50px;
+
+    }
+    .detai-game-icon p{
+        font-size: 10px;
+    }
+    .detail-game-content img{
+        width: 80%;
+        height: auto;
+        margin-left: 50px;
+    }
+    .detail-game-content iframe{
+        width: 100%;
+    }
+    .detail-game-content h3{
+        margin-left: 43px;
+    }
+    .detail-game-content p{
+        margin-left: 43px;
+    }
+    .in-out-door-intro-game img{
+        width: 100%;
+        height: 150px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .in-out-door-game p{
+        font-size: 20px;
+    }
+    .card{
+        margin-bottom: 20px;
+     
+    }
+    .card-1{
+        margin-bottom: 20px;
+    }
+    .card-2{
+        margin-bottom: 20px;
+    }
+    .card-3{
+        margin-bottom: 20px;
+    }
+    .btn-1{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+
+    }
+    .btn-2{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+
+    }
+    .btn-3{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    .btn-4{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+
+    }
+    .scrollTop {
+    position: fixed;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+}
+.blog-content-1{
+    margin-bottom: 20px;
+}
+.blog-content-2{
+    margin-bottom: 20px;
+}
+.blog-content-3{
+    margin-bottom: 20px;
+}
+.blog-content-4{
+    margin-bottom: 20px;
+}
+.intro-para p{
+    text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
+    color: white;
+
+
 
 }
+   
 }
