@@ -1617,12 +1617,12 @@ margin-bottom: 20px;
 .para-title-6{
     font-size: 20px;
 }
-.col-md-8{
+.blog-body-6 .col-md-8{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.col-md-8:hover{
+.blog-body-6 .col-md-8:hover{
     background-color: #000000;
     color: yellow;
     transition: 0.5s;
@@ -1950,14 +1950,10 @@ hr{
     text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
     color: white;
 }
-
-
 }
-
 
  @media only screen and (min-device-width: 769px) 
  {
-
 .benefit-img{
    width: 30%;
    position: relative;
